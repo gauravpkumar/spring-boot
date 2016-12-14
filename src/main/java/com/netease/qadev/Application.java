@@ -1,5 +1,7 @@
 package com.netease.qadev;
 
+import java.util.Arrays;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -30,14 +32,6 @@ public class Application extends SpringBootServletInitializer {
 
     @Bean
     CommandLineRunner commandLineRunner(final ApplicationContext ctx){
-        return new CommandLineRunner() {
-            @Override
-            public void run(String... args) throws Exception {
-                String[] names = ctx.getBeanDefinitionNames();
-                for(String name : names){
-                   LOGGER.info(name);
-                }
-            }
-        };
+        return args -> Arrays.asList(ctx.getBeanDefinitionNames()).forEach(LOGGER::info);
     }
 }
