@@ -5,10 +5,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.netease.meta.Person;
 
-/**
- * Created by hzyanyaqiang on 16-12-9.
- */
-
 @RestController
 public class HomeController {
 

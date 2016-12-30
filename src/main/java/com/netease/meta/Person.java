@@ -1,9 +1,5 @@
 package com.netease.meta;
 
-/**
- * Created by hzyanyaqiang on 16-12-29.
- */
-
 public class Person {
     private String name;
     private Integer age;
