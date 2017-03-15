@@ -1,9 +1,9 @@
-package com.netease.web;
+package com.dnwdi.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.netease.meta.Person;
+import com.dnwdi.meta.Person;
 
 @RestController
 public class HomeController {

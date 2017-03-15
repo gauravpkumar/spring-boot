@@ -1,4 +1,4 @@
-package com.netease.meta;
+package com.dnwdi.meta;
 
 public class Person {
     private String name;
